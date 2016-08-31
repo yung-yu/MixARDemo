@@ -36,7 +36,7 @@ public class RadarPoints implements ScreenObj {
 	/** The radar's range */
 	float range;
 	/** Radius in pixel on screen */
-	public static float RADIUS = 40;
+	public static float RADIUS = 150;
 	/** Position on screen */
 	static float originX = 0 , originY = 0;
 	/** Color */
@@ -66,7 +66,7 @@ public class RadarPoints implements ScreenObj {
 				// For OpenStreetMap the color is changing based on the URL
 					dw.setColor(pm.getColour());
 				
-				dw.paintRect(x + RADIUS - 1, y + RADIUS - 1, 2, 2);
+				dw.paintRect(x + RADIUS - 1, y + RADIUS - 1, 10, 10);
 			}
 		}
 	}
